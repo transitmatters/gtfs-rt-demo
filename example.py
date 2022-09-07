@@ -1,5 +1,4 @@
 import requests
-
 import gtfs_realtime_pb2
 
 r = requests.get("https://cdn.mbta.com/realtime/VehiclePositions.pb")
@@ -11,10 +10,10 @@ for entity in feed.entity:
     trip = vehicle.trip
     position = vehicle.position
     print(
-        "TRIP",
+        "trip",
         trip.trip_id,
-        "ON",
+        "on route",
         trip.route_id,
-        "AT",
+        "is at",
         tuple((round(x, 4) for x in (position.latitude, position.longitude))),
     )
