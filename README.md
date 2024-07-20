@@ -1,4 +1,4 @@
-# What's this?
+# gtfs-rt-demo
 
 This is a minimal demo we hacked together during a working session to read vehicle positions from
 the MBTA's [GTFS Realtime](https://developers.google.com/transit/gtfs-realtime) feed. GTFS-RT uses 
@@ -67,7 +67,7 @@ among other things, a class for each message type in `gtfs-realtime.proto`:
 
 You can inspect `example.py` to see how to instantiate entities from a feed URL.
 
-# Run it yourself
+## Run it yourself
 
 You'll need [poetry](https://python-poetry.org/) to manage Python dependencies. Then:
 
